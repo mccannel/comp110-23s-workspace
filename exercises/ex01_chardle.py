@@ -1,4 +1,4 @@
-"""EX01 - Chardle - A cute step toward Wordle"""
+"""EX01 - Chardle - A cute step toward Wordle."""
 __author__ = "730463845"
 
 word: str = input("Enter a 5-character word: ")
@@ -17,26 +17,27 @@ if (len(char) < 1):
     exit()
 print("Searching for " + char, "in", word)
 total: int = 0
-if (word [0] == char):
+if (word[0] == char):
     print(char + " found at index 0")
     total = total + 1 
-if (word [1] == char):
-    print (char + " found at index 1")
+if (word[1] == char):
+    print(char + " found at index 1")
     total = total + 1
-if (word [2] == char):
-    print (char + " found at index 2")
+if (word[2] == char):
+    print(char + " found at index 2")
     total = total + 1 
-if (word [3] == char):
-    print (char + " found at index 3")
+if (word[3] == char):
+    print(char + " found at index 3")
     total = total + 1
-if (word [4] == char):
-    print (char + " found at index 4")
+if (word[4] == char):
+    print(char + " found at index 4")
     total = total + 1
 
 if (total > 0):
     print(str(total) + " instances of " + char, "found in " + word)
 
+if (total == 1):
+    print(str(total) + " instance of " + char, "found in " + word)
+
 else: 
     print("No instances of " + char, "found in " + word)
-
-
