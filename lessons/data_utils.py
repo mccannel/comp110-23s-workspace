@@ -14,6 +14,7 @@ def column_vals(table: list[dict[str,str]], header: str) -> list[str]:
     result: list[str] = []
     for row in table: 
         result.append(row[header])
+    return result
 
 
 def columnar(table: list[dict[str,str]]) -> dict[str,list[str]]:

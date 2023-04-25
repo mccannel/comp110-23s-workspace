@@ -1,13 +1,15 @@
 """EX07 - Dictionary Function - Unit Tests."""
 __author__ = "730463845"
 
-from exercises.ex07.dictionary import invert, favorite_color, count
+from exercises.ex07.dictionary import invert
+from exercises.ex07.dictionary import favorite_color
+from exercises.ex07.dictionary import count
 
 
-def test_same_keys() -> None:
-    """Tests when two of same values exist in the original list."""
-    test_dict: dict[str, str] = {'a': 'z', 'b': 'y', 'c': 'y'}
-    assert invert(test_dict) == "KeyError: 'This key already exists'"
+def test_empty_dict() -> None:
+    """Tests when dict is empty."""
+    test_dict: dict[str, str] = {}
+    assert invert(test_dict) == {}
 
 
 def test_one_item() -> None:
